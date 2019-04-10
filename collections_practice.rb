@@ -25,7 +25,8 @@ end
 def kesha_maker(array)
   array.map do |item| 
     item_array = item.split("")
-    item_array.delete_at(2).insert(2, '$').join
+    item_array.delete_at(2)
+    item_array.insert(2, '$').join
   end
 end
 
